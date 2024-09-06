@@ -1,0 +1,103 @@
+/* Definição básica do corpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* Gradiente de fundo */
+}
+
+/* Container principal */
+.weather-container {
+    background-color: #ffffff; /* Cor de fundo branco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+}
+
+/* Título */
+.weather-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Caixa de pesquisa */
+.search-box {
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#cityInput:focus {
+    border-color: #2980b9; /* Cor de borda ao focar */
+}
+
+#searchButton {
+    padding: 12px 30px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #1c598a; /* Cor ao passar o mouse */
+}
+
+/* Resultados do clima */
+.weather-result {
+    background-color: #f2f2f2; /* Fundo cinza claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto de resultado */
+.weather-result h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.weather-result h3 {
+    font-size: 30px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+#weatherDescription {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+#humidity {
+    font-size: 18px;
+    color: #777;
+}
+
+#weatherIcon img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
